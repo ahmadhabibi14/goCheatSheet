@@ -1,0 +1,1 @@
+#### Semoga aku bisa ngoding pake bahasa GO 🤲
