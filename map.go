@@ -26,7 +26,30 @@ func main() {
 		caranya dengan menambahkan kurawal setelah tipe data, lalu menuliskan
 		key dan value di dalamnya.Cara ini sekilas mirip dengan definisi nilai
 		array/slice namun dalam bentuk key-value.
+	*/
 
+	// Cara horizontal
+	var chicken1 = map[string]int{"January": 50, "February": 40}
 
+	// Cara vertikal
+	var chicken2 = map[string]int{
+		"January":  50,
+		"February": 40,
+	}
+
+	/*
+		Variabel map bisa diinisialisasi dengan tanpa nilai awal, caranya cukup
+		menggunakan tanda kurung kurawal, contoh: map[string]int{} . Atau bisa
+		juga dengan menggunakan keyword make dan new . Contohnya bisa dilihat
+		pada kode berikut. Ketiga cara di bawah ini intinya adalah sama
+	*/
+
+	var chicken3 = map[string]int{}
+	var chicken4 = make(map[string]int)
+	var chicken5 = *new(map[string]int)
+
+	/*
+		Khusus inisialisasi data menggunakan keyword new , yang dihasilkan adalah data
+		pointer. Untuk mengambil nilai aslinya bisa dengan menggunakan tanda asterisk ( * )
 	*/
 }
