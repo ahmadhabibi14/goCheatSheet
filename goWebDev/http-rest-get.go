@@ -48,8 +48,8 @@ var employees []Employee
 
 func init() {
 	employees = Employees{
-		Employee{Id: "1", FirstName: "Foo", LastName: "Bar"},
-		Employee{Id: "2", FirstName: "Baz", LastName: "Qux"},
+		Employee{Id: "1", FirstName: "Ahmad", LastName: "Habibi"},
+		Employee{Id: "2", FirstName: "Windry", LastName: "Kurniati"},
 	}
 }
 
