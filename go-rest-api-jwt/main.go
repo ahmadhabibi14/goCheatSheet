@@ -99,20 +99,14 @@ func ValidateMiddleware(next http.HandlerFunc) http.HandlerFunc {
 					}
 					return JwtKey, nil
 				})
-
 				if error != nil {
-					json.NewEncoder(w).Encode(Exception{
-						Message: error.Error(),
-					})
+					json.NewEncoder(w).Encode(Exception{Message: error.Error()})
 					return
 				}
-
 				if token.Valid {
 					next.ServeHTTP(w, r)
 				} else {
-					json.NewEncoder(w).Encode(Exception{
-						Message: "Invalid authorization token",
-					})
+					json.NewEncoder(w).Encode(Exception{Message: "Invalid authorization token"})
 				}
 			}
 		} else {

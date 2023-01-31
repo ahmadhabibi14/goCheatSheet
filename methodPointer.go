@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 /*
@@ -11,18 +12,22 @@ import (
 */
 
 type student struct {
-	name  string
-	grade int
+	name string
+	age  int
 }
 
 func (s *student) sayHello() {
 	fmt.Println("Halo", s.name)
+	fmt.Println("Your age is", s.age)
 }
 
 func main() {
-	var s1 = student{
+	var now_year = time.Now().Year()
+	// var year = strconv.Atoi(now_year)
+	var my_age int = now_year - 2004
+	var s1 = &student{
 		"Ahmad Habibi",
-		18,
+		my_age,
 	}
 	s1.sayHello()
 }

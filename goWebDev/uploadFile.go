@@ -44,12 +44,12 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "File %s telah terupload!", header.Filename)
 	} else {
 		// Tampilkan form untuk mengupload file
-		w.Write([]byte(`
+		w.Write([]byte(
 			<form method="POST" enctype="multipart/form-data">
 				Pilih file yang akan diupload: <input type="file" name="file"><br>
 				<input type="submit" value="Upload">
 			</form>
-		`))
+		))
 	}
 }
 
