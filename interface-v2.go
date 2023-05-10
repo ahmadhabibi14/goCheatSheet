@@ -45,6 +45,8 @@ func main() {
 		Author: "Jenny Dolphin",
 		Pages:  25,
 	}
+	info := b.ShowInfo()
+	fmt.Println(info)
 
 	Print(b)
 }
