@@ -78,8 +78,18 @@ func main() {
 	*/
 
 	var data = []map[string]string{
-		{"name": "chicken blue", "gender": "male", "color": "brown"},
-		{"address": "mangga street", "id": "k001"},
-		{"community": "chicken lovers"},
+		{
+			"name":   "chicken blue",
+			"gender": "male",
+			"color":  "brown",
+		}, {
+			"address": "mangga street",
+			"id":      "k001",
+		}, {
+			"community": "chicken lovers",
+		},
+	}
+	for key, val := range data {
+		fmt.Println(key, "	\t:", val)
 	}
 }
