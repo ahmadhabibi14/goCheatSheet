@@ -2,7 +2,7 @@
 Race condition adalah kondisi di mana lebih dari satu goroutine, mengakses data
 yang sama pada waktu yang bersamaan (benar-benar bersamaan). Ketika hal ini
 terjadi, nilai data tersebut akan menjadi kacau. Dalam concurrency
-programming situasi seperti ini ini sering terjadi.
+programming situasi seperti ini sering terjadi.
 
 Mutex melakukan pengubahan level akses sebuah data menjadi eksklusif,
 menjadikan data tersebut hanya dapat dikonsumsi (read / write) oleh satu buah
