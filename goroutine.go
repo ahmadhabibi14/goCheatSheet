@@ -1,3 +1,23 @@
+// baru tau '__')
+// timer := time.NewTimer(0)
+// defer timer.Stop()
+
+// for {
+//     select {
+//         case <-timer.C:
+//             timer.Reset(interval)
+//             job()
+//         case <-ctx.Done():
+//             break
+//     }
+// }
+// daripada
+// for {
+//   job()
+//   <- ticker.C
+// }
+// ^ ga bisa dikasih case lain
+
 package main
 
 import (
