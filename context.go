@@ -12,7 +12,7 @@ import (
 )
 
 func doSomething(ctx context.Context) {
-	fmt.Printf("Do something: myKey's value is %s\n", ctx.Value("myKey"))
+	fmt.Printf("Do something: name's value is %s\n", ctx.Value("name"))
 }
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 	ctx := context.Background()
 
 	// child context
-	ctx = context.WithValue(ctx, "myKey", "myValue")
+	ctx = context.WithValue(ctx, "name", "Habi")
 
 	doSomething(ctx)
 }
