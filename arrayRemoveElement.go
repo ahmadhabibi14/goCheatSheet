@@ -1,24 +1,42 @@
 package main
 
-import "fmt"
-
-var Arr = []int{
-	18, 10, 73, 44, 28, 35, 60,
-}
-
-func removeElement(arr []int, index int) []int {
-	result := make([]int, len(arr)-1)
-
-	copy(result, arr[:index])           // semua elemen hingga sebelum indeks ke-index
-	copy(result[index:], arr[index+1:]) // semua elemen mulai indeks ke-index+1
-
-	return result
-}
+import (
+	"errors"
+	"fmt"
+	"log"
+)
 
 func main() {
-	indexToDelete := 2 // akan menghapus nilai 73
+	var children = []any{
+		18, 10, 73, 44, 28, 35, 60,
+	}
+	fmt.Println("Children Before:", children)
+	children, err := removeElement(children, 44)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	fmt.Println("After removed:", children)
+}
 
-	newArr := removeElement(Arr, indexToDelete) // buat array baru
-	Arr = newArr
-	fmt.Println(Arr)
+
+func removeElement(slice []any, element any) ([]any, error) { 
+	var elmIndex int = -1
+	for i, v := range slice {
+		if v == element {
+			elmIndex = i
+			break
+		}
+	}
+
+	if elmIndex == -1 {
+		return []any{}, errors.New("element not found")
+	}
+
+	result := make([]any, len(slice)-1)
+	
+	copy(result, slice[:elmIndex]) 
+	copy(result[elmIndex:], slice[elmIndex+1:])
+	
+	return result, nil
 }
