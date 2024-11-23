@@ -15,10 +15,10 @@ func TestArrayMultiDimension(t *testing.T) {
 		pada deklarasi variabel numbers2 di kode berikut.
 	*/
 	var numbers1 = [2][3]int{
-		[3]int{
+		{
 			3, 2, 2,
 		},
-		[3]int{
+		{
 			3, 4, 5,
 		},
 	}

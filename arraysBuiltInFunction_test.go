@@ -6,7 +6,7 @@ import (
 )
 
 func batasx() {
-	fmt.Println("\n=========================== | >\n")
+	fmt.Println("\n=========================== | >")
 }
 
 func TestArrayBuiltInFunction(t *testing.T) {
