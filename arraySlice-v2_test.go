@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestArraySliceV2(t *testing.T) {
 	/*
 		Slice merupakan tipe reference. Artinya jika ada slice baru yang terbentuk dari slice lama,
 		maka elemen slice baru memiliki referensi yang sama dengan elemen slice lama.

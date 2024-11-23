@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"context"
 	"fmt"
+	"testing"
 )
 
-func main() {
+func TestContextWithValue(t *testing.T) {
 
 	// Parent context
 	parent := context.Background()

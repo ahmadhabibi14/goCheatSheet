@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestForLoopV2(t *testing.T) {
 	var a = []int{1, 4, 3, 2}
 	// var b = []int{}
 	var n = len(a) - 1

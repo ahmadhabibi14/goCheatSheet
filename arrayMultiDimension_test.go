@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestArrayMultiDimension(t *testing.T) {
 	/*
 		Array multidimensi adalah array yang tiap elemennya juga
 		berupa array (dan bisa seterusnya, tergantung jumlah dimensinya).

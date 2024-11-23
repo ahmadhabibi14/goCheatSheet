@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestArrayMoveElemenToFirst(t *testing.T) {
 	children := []int{198, 349, 825, 902, 627}
 	fmt.Println("Children Before:", children)
 	

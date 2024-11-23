@@ -7,14 +7,15 @@ pembuktian bahwa pengiriman data lewat buffered channel adalah asynchronous sela
 jumlah data yang sedang di-buffer oleh channel tidak melebihi kapasitas buffernya.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
+	"testing"
 )
 
-func main() {
+func TestBufferedChannel(t *testing.T) {
 	runtime.GOMAXPROCS(2)
 
 	messages := make(chan int, 1)

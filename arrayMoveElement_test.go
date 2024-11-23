@@ -1,12 +1,13 @@
-package main
+package cheatsheet
 
 import (
 	"errors"
 	"fmt"
 	"log"
+	"testing"
 )
 
-func main() {
+func TestArrayMoveElement(t *testing.T) {
 	// Sample slice
 	slice := []any{1, 2, 3, 4, 5}
 	

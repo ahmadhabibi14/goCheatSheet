@@ -1,4 +1,6 @@
-package main
+package cheatsheet
+
+import "testing"
 
 /*
 import (
@@ -8,7 +10,7 @@ import (
 )
 */
 
-func main() {
+func TestFunctionV2(t *testing.T) {
 	// Penggunaan Fungsi rand.Seed()
 	/*
 		Fungsi ini diperlukan untuk memastikan bahwa angka random yang akan di-generate

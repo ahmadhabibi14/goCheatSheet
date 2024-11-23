@@ -1,12 +1,13 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"os/exec"
 	"runtime"
+	"testing"
 )
 
-func main() {
+func TestExecV2(t *testing.T) {
 	var output []byte
 	var err error
 	if runtime.GOOS == `windows` {

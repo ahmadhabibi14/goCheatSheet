@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strconv"
+	"testing"
 )
 
-func main() {
+func TestConvertUint64ToString(t *testing.T) {
 	str := "12345"
 
 	// Convert the string to uint64

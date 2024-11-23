@@ -6,11 +6,14 @@ membungkus proses yang hanya dilakukan sekali, bisa mengembalikan nilai, bisa ju
 Di bawah ini merupakan contoh sederhana penerapan metode IIFE untuk filtering data array.
 */
 
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestFunctionIIFE(t *testing.T) {
 	var numbers = []int{2, 3, 0, 4, 3, 2, 0, 4, 2, 0, 3}
 
 	var newNumbers = func(min int) []int {

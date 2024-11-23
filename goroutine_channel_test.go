@@ -1,13 +1,14 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
+	"testing"
 )
 
-func main() {
+func TestGoroutineChannel(t *testing.T) {
 	// create a channel to recieve termination signals
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGTERM)

@@ -1,12 +1,15 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func batas() {
+func batasx2() {
 	fmt.Println("\n=========================== | >\n")
 }
 
-func main() {
+func TestArraysBuiltInFunctionV2(t *testing.T) {
 	/*
 		Fungsi append() digunakan untuk menambahkan elemen pada slice. Elemen baru tersebut
 		diposisikan setelah indeks paling akhir. Nilai balik fungsi ini adalah slice yang sudah

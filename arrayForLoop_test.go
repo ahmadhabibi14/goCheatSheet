@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestForLoop(t *testing.T) {
+func TestArrayForLoop(t *testing.T) {
 	var fruits = [4]string{
 		"Apple", "Grape", "Banana", "Melon",
 	}

@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"regexp"
+	"testing"
 )
 
-func main() {
+func TestExtractSubDomain(t *testing.T) {
   urls := []string{
     "http://admin-2642:1235",
     "http://admin-2642.example.com",

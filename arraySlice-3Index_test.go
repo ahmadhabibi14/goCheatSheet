@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestArraySLice3Index(t *testing.T) {
 	/*
 		3 index adalah teknik slicing elemen yang sekaligus menentukan kapasitasnya.
 		Cara menggunakannnya yaitu dengan menyisipkan angka kapasitas di belakang,

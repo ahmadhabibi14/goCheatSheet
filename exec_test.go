@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"os/exec"
+	"testing"
 )
 
-func main() {
+func TestExec(t *testing.T) {
 	var output1, _ = exec.Command("ls").Output()
 	fmt.Printf(" -> ls\n%s\n", string(output1))
 

@@ -12,12 +12,13 @@
 	dengan cancel signal kita bisa menggunakan function context.WithCancel(parent)
 */
 
-package main
+package cheatsheet
 
 import (
 	"context"
 	"fmt"
 	"sync"
+	"testing"
 	"time"
 )
 
@@ -53,7 +54,7 @@ func Dua(ctx context.Context, cancel func(), group *sync.WaitGroup) {
 	cancel()
 }
 
-func main() {
+func TestContextWithCancel(t *testing.T) {
 	group := sync.WaitGroup{}
 	parent := context.Background()
 	data, cancel := context.WithCancel(parent)

@@ -7,9 +7,12 @@ Closure merupakan anonymous function atau fungsi tanpa nama. Biasa dimanfaatkan 
 membungkus suatu proses yang hanya dipakai sekali atau dipakai pada blok tertentu saja.
 */
 
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 // Closure Disimpan Sebagai Variabel
 /*
@@ -19,7 +22,7 @@ sederhana untuk mencari nilai terendah dan tertinggi dari suatu array. Logika pe
 dibungkus dalam closure yang ditampung oleh variabel getMinMax .
 */
 
-func main() {
+func TestFunctionClosure(t *testing.T) {
 	var getMinMax = func(n []int) (int, int) /* 2 parameter ini adalah tipe data kembalian(return) */ {
 		var min, max int
 		for i, e := range n {

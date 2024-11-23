@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"math/rand"
+	"testing"
 )
 
-func main() {
+func TestGenerateRandomNumber(t *testing.T) {
 	_1 := rand.Intn(10)
 	_2 := rand.Intn(10)
 	_3 := rand.Intn(10)

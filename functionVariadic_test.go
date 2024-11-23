@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
 /*
@@ -15,8 +16,8 @@ import (
 	Cara pengaksesan tiap datanya juga sama, dengan menggunakan indeks.
 */
 
-func main() {
-	var avg = calculate(2, 4, 3, 5, 4, 3, 3, 5, 5, 3)
+func TestFunctionVariadic(t *testing.T) {
+	var avg = calculateX(2, 4, 3, 5, 4, 3, 3, 5, 5, 3)
 	var msg = fmt.Sprintf("Rata-rata	: %.2f", avg)
 	/*
 		Fungsi fmt.Sprintf() pada dasarnya sama dengan fmt.Printf() , hanya saja fungsi ini
@@ -36,7 +37,7 @@ func main() {
 	// yourHobbies("Habibi", "Sleping", "Eating")
 }
 
-func calculate(numbers ...int) float64 {
+func calculateX(numbers ...int) float64 {
 	var total int = 0
 	for _, number := range numbers {
 		total += number

@@ -6,11 +6,12 @@ Langsung saja kita praktekan. Siapkan fungsi printMessage dengan parameter adala
 channel. Lalu ambil data yang dikirimkan lewat channel tersebut untuk ditampilkan
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
+	"testing"
 )
 
 func printMessage(what chan string) {
@@ -18,7 +19,7 @@ func printMessage(what chan string) {
 }
 
 // Setelah itu, ubah implementasi di fungsi main.
-func main() {
+func TestChannelParameter(t *testing.T) {
 	runtime.GOMAXPROCS(2)
 
 	var messages = make(chan string)

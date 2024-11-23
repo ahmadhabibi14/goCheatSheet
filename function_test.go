@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
 /*
@@ -12,15 +13,15 @@ import (
 	berkali-kali, cukup sekali saja dan tinggal panggil jika dibutuhkan
 */
 
-func main() {
+func TestFunction(t *testing.T) {
 	var names = []string{
 		"Ahmad",
 		"Habibi",
 	}
-	printMessage("Halo", names)
+	printMessageX("Halo", names)
 }
 
-func printMessage(message string, arr []string) {
+func printMessageX(message string, arr []string) {
 	var nameString = strings.Join(arr, " ")
 	/*
 		strings.Join() Function in Golang concatenates all the elements present in the
@@ -32,14 +33,14 @@ func printMessage(message string, arr []string) {
 }
 
 /*
-	Pada kode di atas, fungsi baru dibuat dengan nama printMessage memiliki 2 buah
+	Pada kode di atas, fungsi baru dibuat dengan nama printMessageX memiliki 2 buah
 	parameter yaitu string message dan slice string arr .
 
 	Fungsi tersebut dipanggil dalam main , dengan disisipkan 2 buah data sebagai parameter,
 	data pertama adalah string "hallo" yang ditampung parameter message , dan slice string
 	names yang nilainya ditampung oleh parameter arr .
 
-	Di dalam printMessage , nilai arr yang merupakan slice string digabungkan menjadi
+	Di dalam printMessageX , nilai arr yang merupakan slice string digabungkan menjadi
 	sebuah string dengan pembatas adalah karakter spasi. Penggabungan slice dapat
 	dilakukan dengan memanfaatkan fungsi strings.Join() . Fungsi ini berada di dalam
 	package strings .

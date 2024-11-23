@@ -1,9 +1,10 @@
-package main
+package cheatsheet
 
 import (
 	"crypto/rand"
 	"fmt"
 	"math/big"
+	"testing"
 )
 
 func generateRandomNumber() (int, error) {
@@ -15,7 +16,7 @@ func generateRandomNumber() (int, error) {
 	return int(randomNumber.Int64()) + 1, nil
 }
 
-func main() {
+func TestGenerateNumber(t *testing.T) {
 	randomNumber, err := generateRandomNumber()
 	if err != nil {
 		fmt.Println("Error:", err)

@@ -1,12 +1,13 @@
-package main
+package cheatsheet
 
 import (
 	"errors"
 	"fmt"
 	"log"
+	"testing"
 )
 
-func main() {
+func TestArrayRemoveElement(t *testing.T) {
 	var children = []any{
 		18, 10, 73, 44, 28, 35, 60,
 	}

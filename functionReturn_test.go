@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"math/rand"
+	"testing"
 	"time"
 )
 
@@ -12,7 +13,7 @@ import (
 	pada saat deklarasi.
 */
 
-func main() {
+func TestFunctionReturn(t *testing.T) {
 	rand.Seed(time.Now().Unix())
 	var randomValue int
 

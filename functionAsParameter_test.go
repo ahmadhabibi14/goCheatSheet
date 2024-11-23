@@ -7,11 +7,12 @@ Di Golang, fungsi bisa dijadikan sebagai tipe data variabel. Dari situ sangat me
 untuk menjadikannya sebagai parameter juga.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
 func filter(data []string, callback func(string) bool) []string {
@@ -24,7 +25,7 @@ func filter(data []string, callback func(string) bool) []string {
 	return result
 }
 
-func main() {
+func TestFunctionAsParemter(t *testing.T) {
 	var data = []string{
 		"Wick", "Jason", "Ethan", "Bruce",
 	}

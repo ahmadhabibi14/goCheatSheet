@@ -1,12 +1,15 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func batas() {
+func batasx() {
 	fmt.Println("\n=========================== | >\n")
 }
 
-func main() {
+func TestArrayBuiltInFunction(t *testing.T) {
 	/*
 		Fungsi len() digunakan untuk menghitung lebar slice yang ada. Sebagai contoh jika
 		sebuah variabel adalah slice dengan data 4 buah, maka fungsi ini pada variabel tersebut

@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestArrayMake(t *testing.T) {
 	/*
 		Deklarasi sekaligus alokasi data array bisa dilakukan lewat keyword make .
 		Contohnya bisa dilihat pada kode berikut.

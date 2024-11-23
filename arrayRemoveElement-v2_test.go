@@ -1,6 +1,9 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type Item struct {
 	// Define the fields of your struct
@@ -22,7 +25,7 @@ func removeItem(arr []Item, index int) []Item {
 	return result
 }
 
-func main() {
+func TestArrayRemoveElementV2(t *testing.T) {
 	arr := []Item{
 		{ID: 1, Name: "Item 1"},
 		{ID: 2, Name: "Item 2"},

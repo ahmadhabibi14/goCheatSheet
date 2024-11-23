@@ -3,11 +3,14 @@
 // the next case block without checking its condition. In other words, we can merge
 // two case blocks by using the keyword fallthrough.
 
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestFallthrough(t *testing.T) {
 	num := 0
 	switch num {
 	case 0:

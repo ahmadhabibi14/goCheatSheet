@@ -19,9 +19,12 @@ Go has a special statement called defer which schedules
 a function call to be run after the function completes.
 */
 
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func first() {
 	fmt.Println("1st")
@@ -36,7 +39,7 @@ This program prints 1st followed by 2nd.
 Basically defer moves the call to second to the end of the function:
 */
 
-func main() {
+func TestDefer(t *testing.T) {
 	defer second()
 	first()
 	defer fmt.Println("Halo")

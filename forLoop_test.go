@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestForLoop(t *testing.T) {
 	fmt.Println("Perulangan for :")
 	for i := 0; i < 5; i++ {
 		fmt.Println("Angka", i)

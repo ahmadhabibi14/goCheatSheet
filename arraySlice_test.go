@@ -1,14 +1,17 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func batas() {
+func batasx3() {
 	fmt.Println()
 	fmt.Println("+=========================+")
 	fmt.Println()
 }
 
-func main() {
+func TestArraySlice(t *testing.T) {
 	/*
 		Slice adalah referensi elemen array. Slice bisa dibuat, atau bisa juga
 		dihasilkan dari manipulasi sebuah array ataupun slice lainnya. Karena merupakan

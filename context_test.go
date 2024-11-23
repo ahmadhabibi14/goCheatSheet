@@ -4,18 +4,19 @@ dan sinyal deadline. Context biasanya dibuat per request (misal setiap ada reque
 melalui http request), context digunakan untuk mempermudah kita meneruskan value, dan sinyal antar proses.
 */
 
-package main
+package cheatsheet
 
 import (
 	"context"
 	"fmt"
+	"testing"
 )
 
 func doSomething(ctx context.Context) {
 	fmt.Printf("Do something: name's value is %s\n", ctx.Value("name"))
 }
 
-func main() {
+func TestContext(t *testing.T) {
 	// parent context
 	ctx := context.Background()
 

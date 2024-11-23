@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
+	"testing"
 )
 
-func main() {
+func TestChannel(t *testing.T) {
 	runtime.GOMAXPROCS(2)
 
 	var messages = make(chan string)

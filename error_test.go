@@ -16,14 +16,15 @@ balik kedua.
 Berikut merupakan contoh program sederhana untuk deteksi inputan dari user, apakah numerik atau bukan.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strconv"
+	"testing"
 )
 
-func main() {
+func TestError(t *testing.T) {
 	var input string
 	fmt.Print("Type some number :: ")
 	fmt.Scanln(&input)

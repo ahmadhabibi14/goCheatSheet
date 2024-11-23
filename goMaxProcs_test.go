@@ -1,12 +1,13 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestGoMaxProcs(t *testing.T) {
 	fmt.Println("Number of CPU cores before setting: ", runtime.NumCPU())
 
 	// set the maximum number of operating system threads to 2

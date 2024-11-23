@@ -9,12 +9,13 @@ validate(), yang nantinya digunakan untuk pengecekan input, apakah inputan koson
 atau tidak. Ketika kosong, maka error baru akan dibuat.
 */
 
-package main
+package cheatsheet
 
 import (
 	"errors"
 	"fmt"
 	"strings"
+	"testing"
 )
 
 func validate(input string) (bool, error) {
@@ -29,7 +30,7 @@ Selanjutnya di fungsi main, buat program sederhana untuk capture inputan user.
 Manfaatkan fungsi validate() untuk mengecek inputannya.
 */
 
-func main() {
+func TestCustomError(t *testing.T) {
 	var name string
 	fmt.Print("Type your name :: ")
 	fmt.Scanln(&name)

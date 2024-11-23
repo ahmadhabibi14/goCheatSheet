@@ -11,11 +11,12 @@ saat deklarasi fungsi semua tipe data nilai yang dikembalikan, dan pada keyword 
 tulis semua data yang ingin dikembalikan.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
 func calculate(d float64) (float64, float64) {
@@ -52,7 +53,7 @@ dijadikan nilai balik (dengan pemisah tanda koma).
 
 */
 
-func main() {
+func TestFunctionMultiReturn(t *testing.T) {
 	var diameter float64 = 15
 	var area, circumference = calculate(diameter)
 
