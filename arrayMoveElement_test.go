@@ -11,7 +11,7 @@ func main() {
 	slice := []any{1, 2, 3, 4, 5}
 	
 	// Move element 3 to index 1
-	toSlice, err := moveElement(slice, 2, 4)
+	toSlice, err := moveElement(slice, 2, 200)
 	if err != nil {
 		log.Println(err)
 		return
@@ -40,6 +40,7 @@ func moveElement(slice []any, element any, newIndex int) ([]any, error) {
 	
 	// Remove the element from the current index
 	slice = append(slice[:currentIndex], slice[currentIndex+1:]...)
+	log.Println(slice)
 	
 	// Insert the element at the desired index
 	if newIndex >= len(slice) {

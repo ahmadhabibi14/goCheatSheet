@@ -1,12 +1,15 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func batas() {
 	fmt.Println("\n=========================== | >\n")
 }
 
-func main() {
+func TestArray(t *testing.T) {
 	// ------------
 	var namaPanjang [4]string
 	namaPanjang[0] = "Ahmad"

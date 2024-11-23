@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"log"
+	"testing"
 )
 
-func main() {
+func TestArrayInsertElm(t *testing.T) {
   var children = []any{}
 	fmt.Println("Children Before:", children)
 

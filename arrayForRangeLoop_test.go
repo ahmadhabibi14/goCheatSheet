@@ -1,16 +1,19 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func batas() {
+func batas2() {
 	fmt.Println()
 	fmt.Println("+=========================+")
 	fmt.Println()
 }
 
-func main() {
+func TestForRangeLoop(t *testing.T) {
 	// Perulangan Elemen Array Menggunakan Keyword for - range
-	batas()
+	batas2()
 	fmt.Print("Perulangan Elemen Array Menggunakan Keyword for - range \n\n")
 	var fruits = [...]string{
 		"Apple", "Grape", "Banana", "Melon",
@@ -27,7 +30,7 @@ func main() {
 		Output program di atas, sama dengan output program sebelumnya, hanya cara yang digunakan berbeda.
 	*/
 
-	batas()
+	batas2()
 	// Penggunaan Variabel Underscore _ Dalam for - range :
 	/*
 		Kadang kala ketika looping menggunakan for - range , ada kemungkinan dimana data

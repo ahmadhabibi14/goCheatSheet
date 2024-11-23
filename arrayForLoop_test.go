@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestForLoop(t *testing.T) {
 	var fruits = [4]string{
 		"Apple", "Grape", "Banana", "Melon",
 	}
