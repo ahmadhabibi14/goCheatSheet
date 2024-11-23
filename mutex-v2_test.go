@@ -7,12 +7,13 @@ Meskipun demikian, mutex tetap bisa digunakan dengan cara tanpa ditempelkan
 ke objek yang memerlukan lock-unlock. Contohnya bisa dilihat di bawah ini.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
 	"sync"
+	"testing"
 )
 
 type counter_v2 struct {
@@ -28,7 +29,7 @@ func (c *counter_v2) Value() (x int) {
 	return c.val
 }
 
-func main() {
+func TestMutexV2(t *testing.T) {
 	runtime.GOMAXPROCS(2)
 
 	var wg sync.WaitGroup

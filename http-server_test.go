@@ -1,9 +1,10 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"log"
 	"net/http"
+	"testing"
 )
 
 const (
@@ -15,7 +16,7 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello World !")
 }
 
-func main() {
+func TestHTTPServer(t *testing.T) {
 	http.HandleFunc("/", helloWorld)
 	err := http.ListenAndServe(CONN_HOST+":"+CONN_PORT, nil)
 	if err != nil {

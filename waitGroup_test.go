@@ -26,12 +26,13 @@ penggunaannya lebih mudah dan lebih efektif dibanding channel.
 *	parameter method Add() object cetakan sync.WaitGroup . Dan pada akhir tiaptiap goroutine, panggil method Done().
 *	Juga, pada baris kode setelah eksekusi goroutine, panggil method Wait().
  */
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
 	"sync"
+	"testing"
 )
 
 func doPrint(wg *sync.WaitGroup, message string) {
@@ -39,7 +40,7 @@ func doPrint(wg *sync.WaitGroup, message string) {
 	fmt.Println(message)
 }
 
-func main() {
+func TestWaitGroup(t *testing.T) {
 	runtime.GOMAXPROCS(2)
 	var wg sync.WaitGroup
 	for i := 0; i < 5; i++ {

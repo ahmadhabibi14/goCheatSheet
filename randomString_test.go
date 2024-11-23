@@ -4,13 +4,18 @@ Untuk menghasilkan data random string, ada banyak cara yang bisa digunakan,
 salah satunya adalah dengan memafaatkan alfabet dan hasil random numerik.
 */
 
-package main
+package cheatsheet
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+	"testing"
+	"time"
+)
 
-var letters []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-func main() {
+func TestRandomString(t *testing.T) {
 	rand.Seed(time.Now().UTC().UnixNano())
 	fmt.Println("random string 5 karakter:", randomString(5))
 }

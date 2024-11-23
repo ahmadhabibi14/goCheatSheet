@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"log"
+	"testing"
 )
 
 func panicHandler() {
@@ -16,7 +17,7 @@ func employee(name *string, age int) {
 	}
 }
 
-func main() {
+func TestRecover(t *testing.T) {
 	defer panicHandler()
 
 	employeeName := "Downy"

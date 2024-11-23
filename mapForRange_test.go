@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestMapForRange(t *testing.T) {
 	/*
 		Item variabel map bisa di iterasi menggunakan for - range . Cara penerapannya masih
 		sama seperti pada slice, pembedanya data yang dikembalikan di tiap perulangan adalah key

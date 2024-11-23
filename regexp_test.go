@@ -7,12 +7,13 @@ Go mengadopsi standar regex RE2, untuk melihat sintaks yang di-support engine
 ini bisa langsung merujuk ke dokumentasinya di https://github.com/google/re2/wiki/Syntax.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"log"
 	"regexp"
+	"testing"
 )
 
 // Penerapan Regexp
@@ -23,7 +24,7 @@ tersebut mengembalikan objek bertipe regexp.*Regexp .
 
 // Berikut merupakan contoh penerapan regex untuk pencarian karakter:
 
-func main() {
+func TestRegexp(t *testing.T) {
 	var text = "banana burger soup"
 	var regex, err = regexp.Compile(`[a-z]+`)
 	if err != nil {

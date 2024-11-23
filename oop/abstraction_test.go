@@ -1,6 +1,9 @@
-package main
+package oop
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type Animal interface {
 	Speak()
@@ -19,7 +22,7 @@ func (c Cat) Speak() {
 	fmt.Println("Meowww")
 }
 
-func main() {
+func TestAbstraction(t *testing.T) {
 	dog := Dog{}
 	cat := Cat{}
 

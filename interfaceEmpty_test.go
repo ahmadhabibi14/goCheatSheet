@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 )
 
 /*
@@ -13,7 +14,7 @@ import (
 	data lainnya, hanya saja nilai yang diisikan bisa apa saja.
 */
 
-func main() {
+func TestInterfaceEmpty(t *testing.T) {
 	var secret interface{}
 
 	secret = "Ethan Hunt"

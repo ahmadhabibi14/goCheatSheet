@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestQuizLoopV2(t *testing.T) {
 	/*
 		OUTPUT :
 		O	O	O	O	O	O

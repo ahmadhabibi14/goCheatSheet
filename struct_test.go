@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 )
 
 /*
@@ -19,7 +20,7 @@ import (
 */
 
 // Deklarasi Struct
-type student struct {
+type studentXz struct {
 	name  string
 	grade int
 }
@@ -36,14 +37,14 @@ type student struct {
 	memiliki sifat yang sama
 */
 
-func main() {
+func TestStruct(t *testing.T) {
 	// Penerapan Struct
 	/*
 		Struct student yang sudah di siapkan di atas akan kita manfaatkan
 		untuk mencetak sebuah variabel objek. Property variabel tersebut nantinya diisi
 		kemudian di tampilkan
 	*/
-	var s1 student
+	var s1 studentXz
 	s1.name = "Ahmad Habibi"
 	s1.grade = 1
 

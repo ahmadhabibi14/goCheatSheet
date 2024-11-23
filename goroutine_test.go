@@ -18,10 +18,11 @@
 // }
 // ^ ga bisa dikasih case lain
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
@@ -31,7 +32,7 @@ func f(from string) {
 	}
 }
 
-func main() {
+func TestGoroutine(t *testing.T) {
 	f("direct")
 	go f("goroutine")
 

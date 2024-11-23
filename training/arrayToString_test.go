@@ -1,8 +1,9 @@
-package main
+package training
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 	"time"
 )
 
@@ -62,7 +63,7 @@ func ToStateMap(states string) (out StateMap) {
 	return
 }
 
-func main() {
+func TestArrayToString(t *testing.T) {
 	stateINv := `tenant:habi_9123:invited:2023-10-02 tenant:dyan_4823:invited:2023-10-02 tenant:downy_9223:rejected:2023-11-20`
 	invs := ToStateMap(stateINv)
 	fmt.Printf("Tenant Code: \t\t%s\n", invs[`habi_9123`].TenantCode)

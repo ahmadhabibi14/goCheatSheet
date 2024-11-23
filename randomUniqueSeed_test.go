@@ -15,15 +15,16 @@ Coba modifikasi program dengan kode berikut, lalu jalankan ulang. Jangan lupa
 meng-import package time ya.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"math/rand"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestRandUniqSeed(t *testing.T) {
 	rand.Seed(time.Now().UTC().UnixNano())
 	fmt.Println(rand.Int())
 	fmt.Println(rand.Int())

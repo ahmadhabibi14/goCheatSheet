@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
@@ -11,21 +12,21 @@ import (
 	tersebut bisa dilakukan.
 */
 
-type student struct {
+type studentX struct {
 	name string
 	age  int
 }
 
-func (s *student) sayHello() {
+func (s *studentX) sayHello() {
 	fmt.Println("Halo", s.name)
 	fmt.Println("Your age is", s.age)
 }
 
-func main() {
+func TestMethodPointer(t *testing.T) {
 	var now_year = time.Now().Year()
 	// var year = strconv.Atoi(now_year)
 	var my_age int = now_year - 2004
-	var s1 = &student{
+	var s1 = &studentX{
 		"Ahmad Habibi",
 		my_age,
 	}

@@ -1,7 +1,11 @@
-package main
-import "fmt"
+package cheatsheet
 
-func main() {
+import (
+	"fmt"
+	"testing"
+)
+
+func TestIfElse(t *testing.T) {
 	var point = 8
 
 	if point >= 10 {

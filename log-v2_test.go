@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"log"
 	"os"
+	"testing"
 )
 
-func main() {
+func TestLogV2(t *testing.T) {
 	logger := log.New(
 		os.Stderr,
 		"MyGolangApp",

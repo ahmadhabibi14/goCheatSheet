@@ -1,7 +1,11 @@
-package main
-import "fmt"
+package cheatsheet
 
-func main() {
+import (
+	"fmt"
+	"testing"
+)
+
+func TestOperatorLogika(t *testing.T) {
 	var left = false
 	var right = true
 	

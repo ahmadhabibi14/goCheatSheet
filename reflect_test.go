@@ -17,14 +17,15 @@ penting untuk diketahui, yaitu reflect.ValueOf() dan reflect.TypeOf().
 */
 
 // Mencari Tipe Data & Value Menggunakan Reflect
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"reflect"
+	"testing"
 )
 
-func main() {
+func TestReflect(t *testing.T) {
 	var nilaiVar string = "Nilai variabel :"
 	var number = "Habibi"
 	var reflectValue = reflect.ValueOf(number)

@@ -1,24 +1,25 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 )
 
-type student struct {
+type studentP struct {
 	name  string
 	grade int
 }
 
-func main() {
+func TestStructPointer(t *testing.T) {
 	/*
 		Objek hasil cetakan struct bisa diambil nilai pointer-nya, dan bisa disimpan
 		pada variabel objek yang bertipe struct pointer
 	*/
-	var s1 = student{
+	var s1 = studentP{
 		name:  "Wick",
 		grade: 2,
 	}
-	var s2 *student = &s1
+	var s2 *studentP = &s1
 	fmt.Println("Student 1, name :", s1.name)
 	fmt.Println("Student 4, name :", s2.name)
 

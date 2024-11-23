@@ -1,4 +1,4 @@
-package main
+package concurrencypattern
 
 import (
 	"context"
@@ -7,6 +7,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
+	"testing"
 	"time"
 )
 
@@ -36,7 +37,7 @@ func PeriodicTask(ctx context.Context) {
 	}
 }
 
-func main() {
+func TestForSelectDone(t *testing.T) {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 

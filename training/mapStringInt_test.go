@@ -1,12 +1,13 @@
-package main
+package training
 
 import (
 	"fmt"
+	"testing"
 )
 
 // Daftar nama dengan umur nya
 
-func main() {
+func TestMapStrInt(t *testing.T) {
 	ages := map[string]int{
 		"Habibi": 19,
 		"Aulia":  21,

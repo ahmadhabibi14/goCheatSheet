@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 )
 
 /*
@@ -16,11 +17,11 @@ import (
 	berubah.
 */
 
-func batas() {
+func batasX5() {
 	fmt.Println("+=========================+")
 }
 
-func main() {
+func TestPointer(t *testing.T) {
 	// PENERAPAN POINTER
 	/*
 		Variabel bertipe pointer ditandai dengan adanya tanda asterisk ( * ) tepat
@@ -60,7 +61,7 @@ func main() {
 		Nilai asli pointer bisa ditampilkan dengan cara variabel tersebut harus di-dereference
 		terlebih dahulu (bisa dilihat pada kode *numberB ).
 	*/
-	batas()
+	batasX5()
 	// EFEK PERUBAHAN NILAI POINTER
 	/*
 		   Ketika salah satu variabel pointer di ubah nilainya, sedang ada variabel lain yang

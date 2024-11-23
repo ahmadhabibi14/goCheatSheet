@@ -1,7 +1,11 @@
-package main
-import "fmt"
+package cheatsheet
 
-func main() {
+import (
+	"fmt"
+	"testing"
+)
+
+func TestVariable(t *testing.T) {
 	var firstName string = "Ahmad"
 	var lastName string
 	lastName = "Habibi"

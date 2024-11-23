@@ -1,29 +1,30 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 )
 
-type student struct {
+type studentZ struct {
 	name  string
 	grade int
 }
 
-func main() {
+func TestStructObject(t *testing.T) {
 	/*
 		Cara inisialisasi variabel objek adalah dengan menambahkan kurung kurawal setelah nama
 		struct. Nilai masing-masing property bisa diisi pada saat inisialisasi.
 	*/
-	var s1 = student{}
+	var s1 = studentZ{}
 	s1.name = "Wick"
 	s1.grade = 2
 
-	var s2 = student{
+	var s2 = studentZ{
 		"Ethan",
 		2,
 	}
 
-	var s3 = student{
+	var s3 = studentZ{
 		name: "Jason",
 	}
 

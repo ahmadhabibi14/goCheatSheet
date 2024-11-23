@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
 /*
@@ -40,7 +41,7 @@ func (s student) getNameAt(i int) string {
 	method, yaitu sayHello() dan getNameAt() .
 */
 
-func main() {
+func TestMethod(t *testing.T) {
 	var s1 = student{
 		"John Wick",
 		21,

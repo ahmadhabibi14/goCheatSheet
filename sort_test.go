@@ -1,10 +1,11 @@
-package main
+package cheatsheet
 
 import (
 	"encoding/json"
 	"fmt"
 	"log"
 	"sort"
+	"testing"
 )
 
 type User struct {
@@ -21,7 +22,7 @@ func (value UserSlice) Less(i, j int) bool {
 func (value UserSlice) Swap(i, j int) {
 	value[i], value[j] = value[j], value[i]
 }
-func main() {
+func TestSort(t *testing.T) {
 	users := []User{
 		{"Eko", 30},
 		{"Budi", 35},

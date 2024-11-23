@@ -1,7 +1,11 @@
-package main
-import "fmt"
+package cheatsheet
 
-func main() {
+import (
+	"fmt"
+	"testing"
+)
+
+func TestVarTemporaryIfElse(t *testing.T) {
 	var point = 8840.0
 
 	if percent := point / 100; percent >= 100 {

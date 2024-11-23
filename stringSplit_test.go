@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
-func main() {
+func TestStringSplit(t *testing.T) {
 	var nama string = "Ahmad Rizky Nusantara Habibi"
 	var arrayNama = strings.Split(nama, " ")
 

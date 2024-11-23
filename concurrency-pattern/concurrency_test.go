@@ -5,7 +5,7 @@
 // Biasanya proses satu bergantian dengan proses lainnya. Dikarenakan sangat cepat jadi
 // terkadang terlihat seperti dilakukan bersamaan.
 
-package main
+package concurrencypattern
 
 import (
 	"fmt"
@@ -13,14 +13,15 @@ import (
 	"runtime"
 	"sync"
 	"sync/atomic"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestConcurrency(t *testing.T) {
 	numbers := randArray(runtime.NumCPU() * 1e7)
-	t := time.Now()
+	now := time.Now()
 	sum := add(numbers)
-	fmt.Printf("Penjumlahan tanpa concurrency, Jumlah : %d, Waktu : %s\n", sum, time.Since(t))
+	fmt.Printf("Penjumlahan tanpa concurrency, Jumlah : %d, Waktu : %s\n", sum, time.Since(now))
 
 	t2 := time.Now()
 	sum2 := addWithConcurrency(numbers)

@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestLabelForLoop(t *testing.T) {
 	/*
 		Di perulangan bersarang, break dan continue akan berlaku pada
 		blok perulangan dimana ia digunakan saja. Ada cara agar

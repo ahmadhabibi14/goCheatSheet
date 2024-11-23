@@ -1,14 +1,15 @@
-package main
+package cheatsheet
 
 import (
-  "log"
-  "os"
+	"log"
+	"os"
+	"testing"
 )
 
 // Why not use package fmt ?
 // 1) Package log is safe from concurrent goroutines while plain fmt isn't
 // 2) Log can attach information automatically, such as time, date, file path, etc.
-func main() {
+func TestLog(t *testing.T) {
   log.Println("Habibi")
 
   // Ldate uses to get only a date

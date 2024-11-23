@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"regexp"
+	"testing"
 )
 
-func main() {
+func TestRegexpV2(t *testing.T) {
 	methodFindString()
 	methodFindStringIndex()
 	methodFindAllString()

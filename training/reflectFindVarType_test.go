@@ -1,11 +1,12 @@
-package main
+package training
 
 import (
 	"fmt"
 	"reflect"
+	"testing"
 )
 
-func main() {
+func TestReflectFindVarType(t *testing.T) {
 	var nama string
 	fmt.Print("Siapa nama mu :: ")
 	fmt.Scanln(&nama)

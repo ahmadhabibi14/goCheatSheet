@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
 /*
@@ -68,7 +69,7 @@ func (p persegi) keliling() float64 {
 */
 
 // MAIN FUNCTION
-func main() {
+func TestInterface(t *testing.T) {
 	var bangunDatar hitung
 	/*
 		Perhatikan kode di atas. Disiapkan variabel objek bangunDatar yang tipe-nya interface

@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
 /*
@@ -23,7 +24,7 @@ type hitung3d interface {
 	volume() float64
 }
 
-type hitung interface {
+type hitungX interface {
 	hitung2d
 	hitung3d
 }
@@ -57,8 +58,8 @@ func (k *kubus) keliling() float64 {
 	interface hitung yang isinya merupakan gabungan interface hitung2d dan hitung3d.
 */
 
-func main() {
-	var bangunRuang hitung = &kubus{
+func TestInterfaceEmbedded(t *testing.T) {
+	var bangunRuang hitungX = &kubus{
 		4,
 	}
 

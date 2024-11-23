@@ -1,12 +1,15 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func batas() {
+func batasX4() {
 	fmt.Println("+=========================+")
 }
 
-func main() {
+func TestMapV2(t *testing.T) {
 	/*
 		Fungsi delete() digunakan untuk menghapus item dengan key tertentu pada
 		variabel map. Cara penggunaannya, dengan memasukan objek map dan key item
@@ -28,7 +31,7 @@ func main() {
 
 	// Item yang memiliki key "Python" dalam variabel chicken akan dihapus.
 	// Function len() jika digunakan pada map akan mengembalikan jumlah item
-	batas()
+	batasX4()
 
 	fmt.Println("Deteksi Keberadaan Item Dengan Key Tertentu")
 	/*
@@ -48,7 +51,7 @@ func main() {
 	} else {
 		fmt.Println("Item is not exist")
 	}
-	batas()
+	batasX4()
 
 	fmt.Println("Kombinasi Slice & Map")
 	/*

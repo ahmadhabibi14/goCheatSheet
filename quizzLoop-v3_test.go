@@ -1,17 +1,30 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
-	var m, n int
-	fmt.Print("Masukkan angka M : ")
-	fmt.Scanln(&m)
+func toPrint(total int, charc string) {
+	for i := 0; i < total; i++ {
+		fmt.Print(charc)
+		if i != (total) {
+			fmt.Print(" ")
+		}
+	}
+}
 
-	fmt.Print("Masukkan angka N : ")
-	fmt.Scanln(&n)
+func TestQuizLoopV3(t *testing.T) {
+	var (
+		x int = 3
+		y int = 5
+	)
 
-	for i := 0; i < count; i++ {
-
+	for i := 0; i < y; i++ {
+		toPrint(x, "O")
+		toPrint(x, "*")
+		toPrint(x, "=")
+		fmt.Println("")
 	}
 }
 

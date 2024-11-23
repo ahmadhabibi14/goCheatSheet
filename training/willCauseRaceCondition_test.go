@@ -1,7 +1,8 @@
-package main
+package training
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
@@ -10,7 +11,7 @@ func isEven(n int) bool {
 	return n%2 == 0
 }
 
-func main() {
+func TestWillCauseRaceCodition(t *testing.T) {
 	n := 0
 
 	// goroutine 1

@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 )
 
 type Article struct {
@@ -32,7 +33,7 @@ type Stringer interface {
 	ShowInfo() string
 }
 
-func main() {
+func TestInterfaceV2(t *testing.T) {
 	a := Article{
 		Title:  "Understanding Interfaces in Go",
 		Author: "Shammy Shark",

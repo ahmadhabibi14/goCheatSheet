@@ -1,6 +1,9 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type bola interface {
 	tendang() string
@@ -24,7 +27,7 @@ func (t tujuan) oper() string {
 	return t.kawan
 }
 
-func main() {
+func TestInterfaceV3(t *testing.T) {
 	var sepakBola bola
 	sepakBola = tujuan{
 		"musuh", "kawan",

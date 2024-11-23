@@ -1,13 +1,12 @@
-// Sort map by key
-
-package main
+package datastructure
 
 import (
 	"fmt"
 	"sort"
+	"testing"
 )
 
-func main() {
+func TestSortMapByValue(t *testing.T) {
 	basket := map[string]int{
 		"orange":     5,
 		"apple":      7,
@@ -15,10 +14,13 @@ func main() {
 		"strawberry": 9,
 	}
 	keys := make([]string, 0, len(basket))
-	for k := range basket {
-		keys = append(keys, k)
+	for key := range basket {
+		keys = append(keys, key)
 	}
-	sort.Strings(keys)
+
+	sort.SliceStable(keys, func(i, j int) bool {
+		return basket[keys[i]] < basket[keys[j]]
+	})
 
 	for _, k := range keys {
 		fmt.Println(k, basket[k])

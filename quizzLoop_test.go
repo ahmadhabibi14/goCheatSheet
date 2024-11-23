@@ -1,12 +1,15 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func batas() {
+func batasXC() {
 	fmt.Println("+=========================+")
 }
 
-func main() {
+func TestQuizLoop(t *testing.T) {
 	/*
 		OUTPUT :
 				O
@@ -29,7 +32,7 @@ func main() {
 		}
 		fmt.Println()
 	}
-	batas()
+	batasXC()
 
 	/*
 		OUTPUT :
@@ -50,7 +53,7 @@ func main() {
 		}
 		fmt.Println()
 	}
-	batas()
+	batasXC()
 
 	/*
 		OUTPUT :
@@ -71,5 +74,5 @@ func main() {
 		}
 		fmt.Println()
 	}
-	batas()
+	batasXC()
 }

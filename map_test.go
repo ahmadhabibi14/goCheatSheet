@@ -1,8 +1,11 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestMap(t *testing.T) {
 	/*
 		Map adalah tipe data asosiatif yang ada di Golang. Bentuknya key-value,
 		artinya setiap data (atau value) yang disimpan, disiapkan juga key-nya.
@@ -30,12 +33,14 @@ func main() {
 
 	// Cara horizontal
 	var chicken1 = map[string]int{"January": 50, "February": 40}
+	_ = chicken1
 
 	// Cara vertikal
 	var chicken2 = map[string]int{
 		"January":  50,
 		"February": 40,
 	}
+	_ = chicken2
 
 	/*
 		Variabel map bisa diinisialisasi dengan tanpa nilai awal, caranya cukup
@@ -52,4 +57,6 @@ func main() {
 		Khusus inisialisasi data menggunakan keyword new , yang dihasilkan adalah data
 		pointer. Untuk mengambil nilai aslinya bisa dengan menggunakan tanda asterisk ( * )
 	*/
+
+	_, _, _ = chicken3, chicken4, chicken5
 }

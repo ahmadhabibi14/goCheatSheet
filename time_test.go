@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestTime(t *testing.T) {
 	var pongWait = 10 * time.Second
 	fmt.Println("Pong Wait = ", pongWait)
 

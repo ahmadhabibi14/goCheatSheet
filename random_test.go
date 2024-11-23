@@ -28,7 +28,7 @@ Cara menggunakan package ini sangat mudah, yaitu cukup import math/rand ,
 lalu set seed-nya, lalu panggil fungsi untuk generate angka random-nya. Lebih
 jelasnya silakan cek contoh berikut.
 */
-package main
+package cheatsheet
 
 import (
 	"fmt"
@@ -36,9 +36,10 @@ import (
 	"math/rand"
 	"os"
 	"strconv"
+	"testing"
 )
 
-func main() {
+func TestRandom(t *testing.T) {
 	var input string
 	fmt.Print("Input seed atau starting point :: ")
 	fmt.Scanln(&input)

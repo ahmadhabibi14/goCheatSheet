@@ -1,7 +1,11 @@
-package main
-import "fmt"
+package cheatsheet
 
-func main() {
+import (
+	"fmt"
+	"testing"
+)
+
+func TestNestedStatement(t *testing.T) {
 	var point = 2
 
 	if point > 7 {

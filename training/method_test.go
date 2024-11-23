@@ -1,9 +1,10 @@
-package main
+package training
 
 import (
 	"errors"
 	"fmt"
 	"strings"
+	"testing"
 )
 
 type user struct {
@@ -23,7 +24,7 @@ func emptyString(input string) (bool, error) {
 	return true, nil
 }
 
-func main() {
+func TestMethod(t *testing.T) {
 	var name string
 	fmt.Print("Type your name :: ")
 	fmt.Scanln(&name)

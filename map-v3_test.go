@@ -1,11 +1,12 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"sort"
+	"testing"
 )
 
-func main() {
+func TestMapV3(t *testing.T) {
 	// Daftar nama dengan umur nya
 	ages := map[string]int{
 		"Habibi": 19,

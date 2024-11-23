@@ -16,12 +16,13 @@ unlock data. Pada chapter ini kita akan membahas mengenai race condition dan
 cara mengatasinya menggunakan mutex.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"runtime"
 	"sync"
+	"testing"
 )
 
 type counter struct {
@@ -64,7 +65,7 @@ func (c *counter) Value() (x int) {
 	return c.val
 }
 
-func main() {
+func TestMutex(t *testing.T) {
 	runtime.GOMAXPROCS(2)
 
 	var wg sync.WaitGroup

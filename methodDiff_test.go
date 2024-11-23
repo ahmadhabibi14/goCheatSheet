@@ -1,6 +1,9 @@
-package main
+package cheatsheet
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type progLang struct {
 	compiled    string
@@ -24,7 +27,7 @@ func (lb library) bestLibrary() {
 	fmt.Println("Best library backend :: ", lb.backend)
 }
 
-func main() {
+func TestMethodDiff(t *testing.T) {
 	var S1 = &progLang{
 		"Golang", "JavaScript",
 	}

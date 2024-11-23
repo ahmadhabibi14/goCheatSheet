@@ -1,7 +1,8 @@
-package main
+package cheatsheet
 
 import (
 	"log"
+	"testing"
 	"time"
 )
 
@@ -22,7 +23,7 @@ func employee2(name *string, age *int) {
 	log.Println("Employee age:", *age)
 }
 
-func main() {
+func TestRecoverDiffGoroutine(t *testing.T) {
 	// Don't put panic hanndler here
 	// defer panicHandler2()
 

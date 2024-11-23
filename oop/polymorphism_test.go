@@ -1,8 +1,9 @@
-package main
+package oop
 
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
 type Shape interface {
@@ -30,7 +31,7 @@ func PrintArea(s Shape) {
 	fmt.Printf("Area: %f\n", s.Area())
 }
 
-func main() {
+func TestPolymorphism(t *testing.T) {
 	circle := Circle{
 		Radius: 5.0,
 	}

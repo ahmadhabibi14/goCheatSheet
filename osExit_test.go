@@ -9,14 +9,15 @@ bertipe numerik yang wajib diisi. Angka yang dimasukkan akan muncul sebagai exit
 ketika program berhenti.
 */
 
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"os"
+	"testing"
 )
 
-func main() {
+func TestOsExit(t *testing.T) {
 	defer fmt.Println("Halo")
 	os.Exit(0)
 	fmt.Println("Selamat Datang")

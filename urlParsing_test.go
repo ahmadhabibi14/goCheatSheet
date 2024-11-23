@@ -1,8 +1,9 @@
-package main
+package cheatsheet
 
 import (
 	"fmt"
 	"net/url"
+	"testing"
 )
 
 /*
@@ -10,7 +11,7 @@ Data string url bisa dikonversi kedalam bentuk url.URL. Tipe tersebut berisikan 
 informasi yang bisa diakses, diantaranya adalah jenis protokol yang digunakan, path yang
 diakses, query, dan lainnya.
 */
-func main() {
+func TestURLParsing(t *testing.T) {
 	var urlString = "http://depeloper.com:80/hello?name=john wick&age=27"
 	var u, e = url.Parse(urlString)
 	if e != nil {
